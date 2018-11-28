@@ -1,0 +1,15 @@
+In order to change the starting menu
+ - game.jsx line 216
+ - <p> change to <img src > or <a herf> (link)
+
+ In order to change the input of the Game
+ - game.jsx line 45 - 72
+ - Onclick & onChange has to be modify
+
+ In order to change the button of difficulty
+ - game.jsx line 151 - 153
+ - Change CSS (style of button) with ID
+
+Personally, I think we need a submit button, to confirm
+when user press the number button, so that systems knows user
+has input which number
