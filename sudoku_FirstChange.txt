@@ -1,3 +1,5 @@
+---------------------------------------------------------------------------
+
 In order to change the starting menu
  - game.jsx line 216
  - <p> change to <img src > or <a herf> (link)
@@ -13,3 +15,11 @@ In order to change the starting menu
 Personally, I think we need a submit button, to confirm
 when user press the number button, so that systems knows user
 has input which number
+
+Furthermore the problem is, currently the website has its own Domain name
+I think we won't able to use that domain name
+so maybe we will just use ip address with port number
+
+- 2018.11.29
+
+--------------------------------------------------------------------------
