@@ -1,0 +1,23 @@
+▶ For what?
+▶ 무엇 때문에?
+
+Explanation:
+설명:
+
+A for statement is defined in the Python grammar as:
+Python 문법에서 A는 다음과 같이 정의됩니다.
+
+Where exprlist is the assignment target. This means that the equivalent of {exprlist} = {next_value} is executed for each item in the iterable. An interesting example that illustrates this:
+여기서 exprist는 할당 대상입니다. 이는 반복 가능한 각 항목에 대해 {exprlist} = {next_value}에 해당하는 값을 실행함을 의미합니다. 이를 보여주는 흥미로운 예는 다음과 같습니다.
+
+Did you expect the loop to run just once?
+당신은 그 루프가 딱 한번 작동할 것이라고 예상하셨나요?
+
+Explanation:
+설명:
+
+The assignment statement i = 10 never affects the iterations of the loop because of the way for loops work in Python. Before the beginning of every iteration, the next item provided by the iterator (range(4) this case) is unpacked and assigned the target list variables (i in this case).
+할당 명령문 i = 10은 Python에서 루프가 작동하기 때문에 루프의 반복에 영향을 주지 않습니다. 모든 반복이 시작되기 전에 반복자가 제공하는 다음 항목(이 경우 범위(4))을 풀어서 대상 목록 변수(이 경우 i)를 할당합니다.
+
+The enumerate(some_string) function yields a new value i (A counter going up) and a character from the some_string in each iteration. It then sets the (just assigned) i key of the dictionary some_dict to that character. The unrolling of the loop can be simplified as:
+열거(some_string) 함수는 각 반복에서 새로운 값 i(계수가 상승)와 일부_string의 문자를 생성합니다. 그런 다음 사전의 i 키를 해당 문자로 설정하세요. 루프 개방은 다음과 같이 단순화할 수 있습니다.
