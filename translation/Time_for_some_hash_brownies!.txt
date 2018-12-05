@@ -1,0 +1,23 @@
+▶ Time for some hash brownies!
+▶ 해시 브라우니 먹을 시간!
+
+"Python" destroyed the existence of "JavaScript"?
+"Python"은 "JavaScript"의 존재 가치를 없앴습니까?
+
+Explanation:
+설명:
+
+Python dictionaries check for equality and compare the hash value to determine if two keys are the same.
+Python 사전은 평등을 확인하고 해시 값을 비교하여 두 키가 동일한지 확인하세요.
+
+Immutable objects with same value always have the same hash in Python.
+값이 동일한 불변 개체는 항상 파이썬의 해시가 동일합니다.
+
+Note: Objects with different values may also have same hash (known as hash collision).
+참고: 값이 다른 개체도 해시가 같을 수 있습니다(해시 충돌).
+
+When the statement some_dict[5] = "Python" is executed, the existing value "JavaScript" is overwritten with "Python" because Python recognizes 5 and 5.0 as the same keys of the dictionary some_dict.
+python은 5와 5.0을 사전의 동일한 키로 인식하기 때문에 python이라는 문구가 실행되면 기존 값인 "JavaScript"를 "Python"으로 덮어씁니다.
+
+This StackOverflow answer explains beautifully the rationale behind it.
+이 StackOverflow의 대답은 그것의 뒤에 있는 이론들을 아름답게 설명합니다.
