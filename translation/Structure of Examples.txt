@@ -1,0 +1,24 @@
+Structure of Examples 예제의 구조
+
+모든 예시들은 아래와 같이 구성되어 있습니다.
+
+▶ 특정 제목*
+
+일부 특정 제목 *타이틀의 끝에 있는 별표는 첫 번째 버전에 예시가 없고 최근에 추가된 것임을 나타냅니다.
+# Setting up the code.
+# Preparation for the magic...
+
+결과(Phython 버전)
+>>> triggering_statement
+Probably unexpected output
+
+(선택 사항): 예기치 않은 출력을 설명하는 한 줄.
+  -설명 :
+   발생한 사건과 그 사건이 발생한 이유에 대한 간략한 설명
+   Setting up examples for clarification (if necessary)
+
+  -결과 :
+   >>> trigger # some example that makes it easy to unveil the magic
+   # some justified output
+
+주의 : 모든 예시들은 Phython 3.5.2 인터렉티브 인터프리터에 의해 테스트되고 이 예시들은 설명에 명시적으로 나와있는 것을 제외한 모든 Phython 버전에 대해 작동해야 합니다.
