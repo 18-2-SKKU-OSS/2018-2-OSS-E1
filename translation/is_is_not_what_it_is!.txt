@@ -1,0 +1,44 @@
+▶ is is not what it is!
+▶그건 그게 아니야!
+
+The following is a very famous example present all over the internet.
+다음은 인터넷상에서 매우 유명한 예입니다.
+
+Explanation:
+설명:
+
+The difference between is and ==
+~와 ~의 차이==
+
+is operator checks if both the operands refer to the same object (i.e., it checks if the identity of the operands matches or not).
+운영자는 두 피연산자가 동일한 물체를 참조하는지 확인합니다(즉, 피연산자의 ID가 일치하는지 여부를 확인합니다).
+
+== operator compares the values of both the operands and checks if they are the same.
+= 연산자는 두 피연산자의 값을 비교하여 동일한지 점검합니다.
+
+So is is for reference equality and == is for value equality. An example to clear things up,
+기준평등을 위한 것이고 ==는 가치평등을 위한 것입니다. 일을 정리하는 예
+
+256 is an existing object but 257 isn't
+256은 기존 개체지만 257은 그렇지 않습니다.
+
+When you start up python the numbers from -5 to 256 will be allocated. These numbers are used a lot, so it makes sense just to have them ready.
+Python을 시작하면 -5부터 256까지의 숫자가 할당됩니다. 이 숫자들은 많이 사용되기 때문에, 그것들을 준비하는 것이 이치에 맞습니다.
+
+Quoting from https://docs.python.org/3/c-api/long.html
+https://docs.python.org/3/c-api/long.html에서 인용
+
+The current implementation keeps an array of integer objects for all integers between -5 and 256, when you create an int in that range you just get back a reference to the existing object. So it should be possible to change the value of 1. I suspect the behavior of Python, in this case, is undefined. :-)
+현재 구현에서는 -5와 256 사이의 모든 정수의 정수 개체를 유지하며, 이 범위에서 int를 생성하면 기존 객체에 대한 참조만 다시 얻을 수 있습니다. 따라서 1의 값을 변경할 수 있어야 합니다. 나는 이 경우 파이썬의 행동이 정의되지 않았다고 생각합니다. :-)
+
+Here the interpreter isn't smart enough while executing y = 257 to recognize that we've already created an integer of the value 257, and so it goes on to create another object in the memory.
+여기서 통역은 우리가 이미 257 값의 정수를 만들어냈다는 것을 인식하기 위해 y = 257을 실행하는 동안 충분히 똑똑하지 않습니다. 그래서 그것은 메모리에 다른 물체를 만드는 것입니다.
+
+Both a and b refer to the same object when initialized with same value in the same line.
+a와 b는 같은 행에서 동일한 값으로 초기화될 때 동일한 객체를 의미합니다.
+
+When a and b are set to 257 in the same line, the Python interpreter creates a new object, then references the second variable at the same time. If you do it on separate lines, it doesn't "know" that there's already 257 as an object.
+a와 b를 같은 행에서 257로 설정하면, 파이썬 통역사는 새로운 물체를 만든 다음, 동시에 두 번째 변수를 언급합니다. 만약 당신이 그것을 별도의 행에서 한다면, 그것은 이미 257개의 물체가 있다는 것을 모릅니다.
+
+It's a compiler optimization and specifically applies to the interactive environment. When you enter two lines in a live interpreter, they're compiled separately, therefore optimized separately. If you were to try this example in a .py file, you would not see the same behavior, because the file is compiled all at once.
+그것은 컴파일러 최적화로 특히 상호 작용 환경에 적용됩니다. 실시간 통역기에 두 줄을 입력하면 각각 별도로 컴파일되므로 별도로 최적화합니다. 만약 당신이 이 예제를 .py 파일로 시도한다면, 당신은 같은 행동을 볼 수 없을 것입니다. 왜냐하면 파일은 동시에 컴파일되기 때문입니다.
