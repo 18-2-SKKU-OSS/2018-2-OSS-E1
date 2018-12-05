@@ -1,0 +1,11 @@
+▶ Return return everywhere!
+▶ 모든 곳에서 돌아오십시오!
+
+Explanation:
+설명:
+
+When a return, break or continue statement is executed in the try suite of a "try…finally" statement, the finally clause is also executed ‘on the way out.
+반환, 중단 또는 계속을 위한 진술이 테스트 스위트(try asset)에서 실행될 때...finally"라는 문장으로, 마지막 조항은 또한 '출발하는 도중에' 실행됩니다.
+
+The return value of a function is determined by the last return statement executed. Since the finally clause always executes, a return statement executed in the finally clause will always be the last one executed.
+함수의 반환 값은 마지막으로 실행된 반환문에 의해 결정됩니다. 마지막 조항이 항상 실행되기 때문에, 마지막 조항에서 실행되는 반품 명세서는 항상 마지막으로 실행된 조항이 될 것입니다.
