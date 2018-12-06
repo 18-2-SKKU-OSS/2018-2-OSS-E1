@@ -5,5 +5,33 @@
 </head>
 <body>
 	<div style="text-align:center"><h1>Deep down, we're all the same</h1></div>
+	<h3>
+		깊은 곳, 우리는 모두 똑같다
+	</h3>
+
+	<img src="./pic/4.1.png">
+	<p>output</p>
+	<img src="./pic/4.2.png">
+	<p>
+		설명:
+	</p>
+	<ul>
+		<li><p>
+			ID가 호출되었을 때 Python은 WTF 클래스 객체를 만들어 ID 함수에 전달했습니다. ID 함수는 ID(메모리 위치)를 가져와서 객체를 버립니다. 그 물체는 파괴되었습니다.
+		</p></li>
+		<li><p>
+			우리가 이것을 두 번 연속으로 할 때, Python은 두 번째 개체에도 동일한 메모리 위치를 할당합니다. CPython에서 ID는 메모리 위치를 개체 ID로 사용하기 때문에 두 개체의 ID는 동일합니다.
+		</p></li>
+		<li><p>
+			따라서 개체의 ID는 개체의 수명 동안만 고유합니다. 객체가 파괴되거나 생성되기 전에 다른 객체가 동일한 ID를 가질 수 있습니다.
+		</p></li>
+		<li><p>
+			하지만 운영자는 왜 거짓으로 평가되었을까요? 이 정보로 봅시다.
+			<br><img src="./pic/4.3.png"><br>output<br><img src="./pic/4.4.png"><br>보시다시피, 이 물건들이 파괴되는 순서가 여기서 모든 차이를 만들었습니다.
+		</p></li>
+
+
+	</ul>
+
 </body>
 </html>
