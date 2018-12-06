@@ -1,0 +1,17 @@
+▶ A tic-tac-toe where X wins in the first attempt!
+▶ X가 1차 시도에서 이기는 틱탁토!
+
+We didn't assign 3 "X"s or did we?
+우리는 3개의 "X"를 할당했을까요 안했을까요?
+
+Explanation:
+설명:
+
+When we initialize row variable, this visualization explains what happens in the memory
+행 변수를 초기화할 때 이 시각화는 메모리에서 일어나는 일을 설명합니다.
+
+And when the board is initialized by multiplying the row, this is what happens inside the memory (each of the elements board[0], board[1] and board[2] is a reference to the same list referred by row)
+그리고 이것은 행을 곱하여 초기화하면 메모리 내에서 발생하는 현상을 보여줍니다.(요소 보드[0], 보드[1] 및 보드[2]는 행에서 언급된 동일한 목록에 대한 참조입니다.)
+
+We can avoid this scenario here by not using row variable to generate board. (Asked in this issue).
+여기서는 행 변수를 사용하여 보드를 생성하지 않음으로써 이 시나리오를 피할 수 있습니다. (이 호에 나와 있습니다.)
