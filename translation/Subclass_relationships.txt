@@ -1,0 +1,26 @@
+▶ Subclass relationships *
+▶ 하위 클래스 관계 *
+
+Output:
+결과:
+
+The Subclass relationships were expected to be transitive, right? (i.e., if A is a subclass of B, and B is a subclass of C, the A should a subclass of C)
+하위 계급 관계는  전이적인 것으로 예상됩니다. (즉, A가 B의 하위 클래스이고 B가 C의 하위 클래스인 경우 A는 C의 하위 클래스여야 합니다.)
+
+💡 Explanation:
+💡 설명:
+
+Subclass relationships are not necessarily transitive in Python. 
+하위 계급 관계가 반드시 파이썬에서 전이적인 것은 아닙니다. 
+
+Anyone is allowed to define their own, arbitrary __subclasscheck__ in a metaclass.
+누구든 메타클래스에서 임의의 __subclasscheck__를 정의할 수 있습니다.
+
+When issubclass(cls, Hashable) is called, it simply looks for non-Falsey "__hash__" method in cls or anything it inherits from.
+evaluubclass(cls, Hashable)를 호출하면 cls 또는 cls에서 non false "__hash__" 메서드를 검색하기만 하면 됩니다.
+
+Since object is hashable, but list is non-hashable, it breaks the transitivity relation.
+개체는 해시할 수 있지만 목록은 해시할 수 없으므로, 전이적인 관계가 끊어버립니다.
+
+More detailed explanation can be found here.
+자세한 설명은 여기에서 찾아볼 수 있습니다.
