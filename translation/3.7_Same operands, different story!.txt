@@ -1,0 +1,25 @@
+ Same operands, different story!
+
+1.
+
+Output:
+결과:
+
+2.
+
+Output:
+결과:
+
+Explanation:
+설명:
+
+a += b doesn't always behave the same way as a = a + b. Classes may implement the op= operators differently, and lists do this.
+a = a + b와 항상 같은 방식으로 동작하는 것은 아니다. 클래스는 op= 연산자를 다르게 구현할 수 있으며 list에서는 이를 시행한다.
+
+The expression a = a + [5,6,7,8] generates a new list and sets a's reference to that new list, leaving b unchanged.
+a = a + [5,6,7.8]이라는 표현은 새 list을 생성하고 해당 새 list에 대한 a의 참조를 설정하며, b는 변경되지 않는다.
+
+The expression a += [5,6,7,8] is actually mapped to an "extend" function that operates on the list such that a and b still point to the same list that has been modified in-place.
+a+= [5,6,7,8]이라는 표현은 실제로 a와 b가 여전히 내부에서 수정된 list를 가리키도록 목록에서 작동하는 extend 함수에 매핑된다.
+
+
