@@ -1,0 +1,25 @@
+Needle in a Haystack
+
+1.
+Output:
+결과:
+
+Almost every Python programmer has faced a similar situation.
+대부분의 모든 파이선 프로그래머는 비슷한 상황에 처한다.
+
+2.
+
+Output:
+결과:
+
+Explanation:
+설명:
+
+For 1, the correct statement for expected behavior is x, y = (0, 1) if True else (None, None).
+1의 경우, 예상 동작에 대한 올바른 문장은 x, y = (0, 1) True이면(없음, 없음).
+
+For 2, the correct statement for expected behavior is t = ('one',) or t = 'one', (missing comma) otherwise the interpreter considers t to be a str and iterates over it character by character.
+2의 경우, 예상 동작에 대한 올바른 문장은 t = ('one',) 또는 t = 'one', (noting 쉼표)이며, 그렇지 않으면 해석자는 t를 str으로 간주하여 문자별로 반복한다.
+
+() is a special token and denotes empty tuple.
+()는 특수 토큰이며 빈 튜플을 나타낸다.
