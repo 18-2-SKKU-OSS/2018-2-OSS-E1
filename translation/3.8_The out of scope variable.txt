@@ -1,0 +1,20 @@
+The out of scope variable
+변수 범위를 벗어나기.
+
+Output:
+결과:
+
+Explanation:
+설명:
+
+When you make an assignment to a variable in scope, it becomes local to that scope. So a becomes local to the scope of another_func, but it has not been initialized previously in the same scope which throws an error.
+범위의 변수에 할당하면 해당 변수의 로컬이 된다. 따라서 a는 다른_funct의 범위에 로컬이 되지만 오류를 발생시키는 동일한 범위에서 이전에 초기화되지 않았다.
+
+Read this short but an awesome guide to learn more about how namespaces and scope resolution works in Python.
+namespace와 범위 해결이 Python에서 어떻게 해야하는지 자세히 알아보려면 이 짧지만 멋진 가이드를 읽어 보십시오.
+
+To modify the outer scope variable a in another_func, use global keyword.
+외부 범위 변수 a를 다른 _func에서 수정하려면 전역 변수를 사용하십시오.
+
+Output:
+결과:
