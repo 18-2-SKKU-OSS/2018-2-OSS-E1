@@ -1,0 +1,24 @@
+ Name resolution ignoring class scope
+클래스 범위를 무시하는 이름 확인
+1.
+Output:
+결과:
+
+2.
+
+Output: (파이선 2.x):
+
+Output: (파이선 3.x):
+
+Explanation:
+설명:
+
+Scopes nested inside class definition ignore names bound at the class level.
+클래스 정의에 내포된 범위는 클래스 수준에 바인딩된 이름을 무시한다.
+
+A generator expression has its own scope.
+생성자 표현에는 고유의 범위가 있다.
+
+Starting from Python 3.X, list comprehensions also have their own scope.
+Python 3.X부터 list 이해는 또한 그들 자신의 범위를 가지고 있다.
+
