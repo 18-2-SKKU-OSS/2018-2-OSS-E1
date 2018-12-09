@@ -5,5 +5,35 @@
 </head>
 <body>
 	<div style="text-align:center"><h1>Name resolution ignoring class scope</h1></div>
+
+	<h3>
+		클래스 범위를 무시하는 이름 확인
+	</h3>
+
+	<p>1.</p>
+	<img src="./pic/38.1.png">
+	<p>output</p>
+	<img src="./pic/38.2.png">
+	<p>2.</p>
+	<img src="./pic/38.3.png">
+	<p>Output (Python 2.x):</p>
+	<img src="./pic/38.4.png">
+	<p>Output (Python 3.x):</p>
+	<img src="./pic/38.4.png">
+
+	<p>
+		설명:
+	</p>
+	<ul>
+		<li><p>
+			클래스 정의에 내포된 범위는 클래스 수준에 바인딩된 이름을 무시한다.
+		</p></li>
+		<li><p>
+			생성자 표현에는 고유의 범위가 있다.
+		</p></li>
+		<li><p>
+			Python 3.X부터 list 이해는 또한 그들 자신의 범위를 가지고 있다.
+		</p></li>
+	</ul>
 </body>
 </html>
