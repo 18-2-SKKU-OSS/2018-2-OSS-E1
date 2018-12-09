@@ -5,5 +5,32 @@
 </head>
 <body>
 	<div style="text-align:center"><h1>Subclass relationships *</h1></div>
+
+
+	<h3>
+		하위 클래스 관계
+	</h3>
+
+	<img src="./pic/23.1.png">
+	<p>하위 계급 관계는  전이적인 것으로 예상됩니다. (즉, A가 B의 하위 클래스이고 B가 C의 하위 클래스인 경우 A는 C의 하위 클래스여야 합니다.)</p>
+
+	<p>
+		설명:
+	</p>
+	<ul>
+		<li><p>
+			하위 계급 관계가 반드시 파이썬에서 전이적인 것은 아닙니다.누구든 메타클래스에서 임의의 __subclasscheck__를 정의할 수 있습니다.
+		</p></li>
+		<li><p>
+			evaluubclass(cls, Hashable)를 호출하면 cls 또는 cls에서 non false "__hash__" 메서드를 검색하기만 하면 됩니다.
+		</p></li>
+		<li><p>
+			개체는 해시할 수 있지만 목록은 해시할 수 없으므로, 전이적인 관계가 끊어버립니
+		</p></li>
+		<li><p>
+			자세한 설명은 여기에서 찾아볼 수 있습니다.
+		</p></li>
+	</ul>
+
 </body>
 </html>
