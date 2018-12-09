@@ -5,5 +5,31 @@
 </head>
 <body>
 	<div style="text-align:center"><h1>The mysterious key type conversion</h1></div>
+
+	<h3>
+		신비한 키 유형 변환
+	</h3>
+
+	<img src="./pic/24.1.png">
+	<p>Output:</p>
+	<img src="./pic/24.2.png">
+
+	<p>
+		설명:
+	</p>
+	<ul>
+		<li><p>
+			일부 클래스는 __hash__의 str 클래스 메서드를 상속하기 때문에 개체 s 와 문자열 "s" 해시를 동일한 값으로 상속합니다.
+		</p></li>
+		<li><p>
+			일부 클래스("s") == "s"는 일부 클래스도 str 클래스로부터 __eq__ 메서드를 상속받기 때문에 True로 평가됩니다.
+		</p></li>
+		<li><p>
+			두 개체는 동일한 값으로 해시되고 같으므로 사전에서 같은 키로 표시됩니다.
+		</p></li>
+		<li><p>
+			원하는 동작을 위해 일부 클래스에서 __eq__ 메서드를 재정의할 수 있습니다.<br><img src="./pic/24.3.png"><br>Output<br><img src="./pic/24.4.png">
+		</p></li>
+	</ul>
 </body>
 </html>
