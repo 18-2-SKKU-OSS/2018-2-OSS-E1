@@ -1,0 +1,22 @@
+▶ The mysterious key type conversion *
+▶ 신비한 키 유형 변환 *
+
+Output:
+결과 : 
+
+💡 Explanation:
+💡 설명:
+Both the object s and the string "s" hash to the same value because SomeClass inherits the __hash__ method of str class.
+일부 클래스는 __hash__의 str 클래스 메서드를 상속하기 때문에 개체 s 와 문자열 "s" 해시를 동일한 값으로 상속합니다.
+
+SomeClass("s") == "s" evaluates to True because SomeClass also inherits __eq__ method from str class.
+일부 클래스("s") == "s"는 일부 클래스도 str 클래스로부터 __eq__ 메서드를 상속받기 때문에 True로 평가됩니다.
+
+Since both the objects hash to the same value and are equal, they are represented by the same key in the dictionary.
+두 개체는 동일한 값으로 해시되고 같으므로 사전에서 같은 키로 표시됩니다.
+
+For the desired behavior, we can redefine the __eq__ method in SomeClass.
+원하는 동작을 위해 일부 클래스에서 __eq__ 메서드를 재정의할 수 있습니다.
+
+Output:
+결과:

@@ -1,0 +1,23 @@
+▶ Mutating the immutable!
+▶ 불변의 무법자!
+
+Output:
+결과:
+
+But I thought tuples were immutable...
+하지만 난 튜플이 불변이라고 생각했습니다...
+
+💡 Explanation:
+💡 설명:
+
+Quoting from https://docs.python.org/2/reference/datamodel.html
+https://docs.python.org/2/reference/datamodel.html 로부터 인용됨
+
+Immutable sequences An object of an immutable sequence type cannot change once it is created. (If the object contains references to other objects, these other objects may be mutable and may be modified; however, the collection of objects directly referenced by an immutable object cannot change.)
+불변의 시퀀스 변경 불가능한 시퀀스 유형의 개체는 일단 생성되면 변경할 수 없습니다. (물체에 다른 객체에 대한 참조가 포함된 경우, 이러한 다른 객체는 변경할 수 있고 수정할 수 있지만, 변경할 수 없는 객체에 의해 직접 참조되는 객체의 집합은 변경할 수 없음)
+
++= operator changes the list in-place.
++= 연산자는 리스트를 in-place로 바꿉니다.
+
+The item assignment doesn't work, but when the exception occurs, the item has already been changed in place.
+항목 할당은 작동하지 않지만 예외가 발생하면 항목이 이미 제자리에 변경되었습니다.

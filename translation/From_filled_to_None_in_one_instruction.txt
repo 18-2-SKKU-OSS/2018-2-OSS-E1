@@ -1,0 +1,15 @@
+▶ From filled to None in one instruction...
+▶ 한 가지 인스트럭션에서 채워진 것부터 없음까지...
+
+Output:
+결과:
+
+💡 Explanation
+💡 설명
+
+Most methods that modify the items of sequence/mapping objects like list.append, dict.update, list.sort, etc. modify the objects in-place and return None. 
+list.append, order.update, list.sort 등과 같이 sequence/mapping 객체의 항목을 수정하는 대부분의 방법에서 개체를 수정하고 none을 반환합니다.
+
+
+The rationale behind this is to improve performance by avoiding making a copy of the object if the operation can be done in-place (Referred from here).
+그 것의 근거는 작업을 현장에서 수행할 수 있는 경우 물체의 복사를 방지하여 성능을 개선하는 것입니다.(여기에서 참조됨).

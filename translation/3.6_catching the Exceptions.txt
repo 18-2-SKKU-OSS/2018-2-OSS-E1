@@ -1,0 +1,26 @@
+catching the Exceptions
+예외 포착
+
+Output (Python 2.x):
+결과:
+
+Output (Python 3.x):
+결과:
+
+Explanation:
+설명:
+
+To add multiple Exceptions to the except clause, you need to pass them as parenthesized tuple as the first argument. The second argument is an optional name, which when supplied will bind the Exception instance that has been raised. Example,
+예외 조항에 여러 개의 예외를 추가하려면 첫 번째 인수로 이를 괄호로 묶어서 전달해야 한다. 두 번째 인수는 선택적 이름이며, 제공된 경우 제기된 예외 인스턴스를 바인딩한다. 예
+
+Output (Python 2.x):
+결과:
+
+Output (Python 3.x):
+결과:
+
+Separating the exception from the variable with a comma is deprecated and does not work in Python 3; the correct way is to use as. Example,
+변수를 쉼표로 구분하는 것은 더 이상 사용되지 않으며 Python 3에서는 작동하지 않는다. 올바른 방법은 다음과 같다. 예
+
+Output:
+결과:

@@ -1,0 +1,17 @@
+▶ When True is actually False
+▶ True가 사실 False일 때
+
+Output:
+결과:
+
+💡 Explanation:
+💡 설명:
+
+Initially, Python used to have no bool type (people used 0 for false and non-zero value like 1 for true). 
+처음에 Python은 bool type을 가지고 있지 않았습니다. (false는 0이고 true는 1과 같이 0이 아닌 값을 사용했습니다.) 
+
+Then they added True, False, and a bool type, but, for backward compatibility, they couldn't make True and False constants- they just were built-in variables.
+그리고 나서 그들은 True, False, Bool type을 추가했지만, 역호환성을 위해 그들은 True와 False 상수를 만들 수 없었습니다. True, False, Bool type은 단지 내장된 변수였습니다.
+
+Python 3 was backward-incompatible, so it was now finally possible to fix that, and so this example won't work with Python 3.x!
+Python 3은 역호환이 되었기 때문에, 마침내 그것을 고칠 수 있게 되었습니다. 그래서 이 예는 Python 3.x에서 작동하지 않을 것입니다!

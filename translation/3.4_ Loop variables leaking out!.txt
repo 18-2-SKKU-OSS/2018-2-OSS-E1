@@ -1,0 +1,25 @@
+ Loop variables leaking out!
+루프 변수가 누출됐습니다!
+1.
+Output:
+결과:
+
+But x was never defined outside the scope of for loop...
+하지만 x는 반복문 밖의 영역에서 정의되지 않습니다.
+
+2.
+Output:
+결과:
+
+3.
+Output:
+결과(Python 2.x):
+
+Output:
+결과(Python 3.x):
+
+Explanation:
+설명:
+
+In Python, for-loops use the scope they exist in and leave their defined loop-variable behind. This also applies if we explicitly defined the for-loop variable in the global namespace before. In this case, it will rebind the existing variable.
+Python에서, 반복문은 그들이 존재하는 범위를 사용하고 그들의 정의된 반복문 변수를 뒤에 남긴다. 이는 이전에 전역 namespace에서 반복문 변수를 명시적으로 정의한 경우에도 적용된다. 이 경우 기존 변수를 재귀결한다.
