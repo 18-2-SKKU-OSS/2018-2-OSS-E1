@@ -5,5 +5,25 @@
 </head>
 <body>
 	<div style="text-align:center"><h1>Teleportation</h1></div>
+
+	<h3>
+		순간이동
+	</h3>
+
+	<img src="./pic/27.1.png">
+	<p>output</p>
+	<img src="./pic/27.2.png">
+	<p>np는 어디 갔을까요?</p>
+	<p>
+		설명:
+	</p>
+	<ul>
+		<li><p>
+			energy_send 함수에서 생성된 numpy 배열이 반환되지 않았기 때문에 재할당하는 데 필요한 메모리 공간이 충분합니다.
+		</p></li>
+		<li><p>
+			numpy.empty()는 재할당 없이 비어있는 다음 메모리 공간을 반환합니다. 이 메모리 공간은 주로 직전에 할당 해제된 메모리 공간과 동일합니다.
+		</p></li>
+	</ul>
 </body>
 </html>
