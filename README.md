@@ -32,6 +32,9 @@
   - ~~Role: 코드 수정 및 번역~~
   - Role: 첫 번째 섹션(Section: Strain your brain!) 번역
 
+## Activities
+[2018-2-OSS-E1 Activities](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E1/wiki/Team-E1-Wiki#activities)
+
 ## Wiki
 [2018-2-OSS-E1 Wiki](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E1/wiki/Team-E1-Wiki)
 
